@@ -1,10 +1,11 @@
+import { Header } from './components/Header'
 import './styles/Global.scss'
 
 function App() {
 
   return (
     <>
-      <h1>Hello World</h1>
+      <Header />
     </>
   )
 }
