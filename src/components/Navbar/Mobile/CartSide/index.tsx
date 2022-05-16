@@ -1,8 +1,9 @@
 import React from 'react'
-import { useFetchsAPI } from '../../hooks/useFetchAPI'
-import './cart.modules.scss'
+import { useFetchsAPI } from '../../../../hooks/useFetchAPI';
 
-export function Cart() {
+import './cartSide.modules.scss'
+
+export function CartSide() {
   const { products } = useFetchsAPI();
   
   return (
@@ -32,15 +33,15 @@ export function Cart() {
               )
             })
           }
-        <div className="div-cart">
-          <div className="price">
-            <span>Total do pedido:</span> 
-            <span className="total">R$ 20.356,95</span>
+          <div className="div-cart">
+            <div className="price">
+              <span>Total do pedido:</span> 
+              <span className="total">R$ 20.356,95</span>
+            </div>
           </div>
-        </div>
-          <button>Finalizar compra</button>
-        </div>
-      </section>
+            <button>Finalizar compra</button>
+          </div>
+        </section>
    </>
   )
 }

@@ -1,0 +1,98 @@
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+
+  .cart {
+    background-color: #F0F0F0;
+    width: 100vw;
+    height: 500px;
+    position: absolute;
+    overflow-y: scroll;
+
+    .items {
+      display: flex;
+      flex-direction: column;     
+      padding: 10px;
+
+      .group-products {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+        
+        img {
+          width: 100px;
+        }
+
+        .group-info {
+          h3 {
+            width: 200px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+          .title {
+            font-weight: 400;
+            font-size: 14px;
+          }
+
+          .group-quantity {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            margin-top: 10px;
+
+            .price {
+              color: #00BC0E;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+
+    hr {
+      margin-top: 10px;
+      width: 100%;
+      border: 1px solid #E7E7E7;
+    }
+
+    .div-cart {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+
+      .price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 25px;
+        color: #7a7a7a;
+
+        .total {
+          color: #555555;
+          font-weight: 700;
+        }
+      }
+    }
+    button {
+      width: 100vw;
+      height: 50px;
+      transition: filter 0.2ms;
+      background-color: #035f0a;
+      border: none;
+      color: #ffff;
+      font-weight: 500;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+  
+    button:hover {
+      filter: brightness(0.90);
+      cursor: pointer;
+    }
+  }
+}

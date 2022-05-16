@@ -1,11 +1,11 @@
-import { Header } from './components/Header'
+import { Navbar } from './components/Navbar'
+
 import './styles/Global.scss'
 
 function App() {
-
-  return (
+  return (  
     <>
-      <Header />
+      <Navbar />
     </>
   )
 }
