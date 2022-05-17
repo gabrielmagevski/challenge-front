@@ -11,7 +11,7 @@ $ yarn dev ( para executar o codigo em ambiente de desenvolvimento )
 Scss, typescript, axios, vite, reactjs. 
 
 ## Por que? 
-Scss - para poder criar estilos em forma de cascatas. <br />
+Scss - para poder criar estilos em forma de cascatas e com funcionalidades novas diferente do nativo puro do css. <br />
 Typescript - para deixar mais organizado o nosso código.<br />
 Axios - para consumir nossa API em json.<br />
 Vite - para poder criar um boirdeplate simples e com mais agilidade diferente do create-react-app<br />
@@ -32,7 +32,7 @@ $ yarn dev (to run code in development environment)
 Scss, typed text, axios, vite, reactjs.
 
 ## Why?
-Scss - to be able to create styles in the form of waterfalls.<br />
+Scss - to be able to create styles in the form of waterfalls with new features different from the pure native css..<br />
 Typed text - to make our code more organized.<br />
 Axios - to consume our API in json.<br />
 Vite - to be able to create a simple and faster boyrdeplate different from create-react-app<br />
