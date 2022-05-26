@@ -10,9 +10,8 @@ export type PropsProducts = {
   image: string;
 }
 
-
 export function useFetchsAPI() {
-  const[products, setProducts] = useState<PropsProducts[]>([]);
+  const[ products, setProducts ] = useState<PropsProducts[]>([]);
 
   const handleGetProducts = async () => {
     try {

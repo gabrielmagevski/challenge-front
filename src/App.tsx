@@ -1,11 +1,12 @@
-import { Navbar } from './components/Navbar'
 
-import './styles/Global.scss'
+import { Header } from './components/Navbar'
+import { GlobalStyles } from './styles/GlobalStyles'
 
 function App() {
   return (  
     <>
-      <Navbar />
+      <GlobalStyles />
+      <Header />
     </>
   )
 }
