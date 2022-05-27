@@ -1,5 +1,5 @@
 import React from 'react'
-import { TypeItem } from '../../@types/TypesAll';
+import { TypeItem } from '@/@types/TypesAll';
 import { 
   GroupProducts, 
   Items,
@@ -8,7 +8,6 @@ import {
   SummaryInformation,
   Line 
 } from './styles';
-
 
 export function CartItem({ data }: TypeItem) {
   return (

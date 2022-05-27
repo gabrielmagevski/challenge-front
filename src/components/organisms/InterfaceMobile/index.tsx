@@ -1,10 +1,12 @@
 import { useState } from "react";
-import { Sidebar } from './Sidebar';
-import LogoMobile from '../../../assets/images/logo/logoEplus.png';
-import { HeaderMobile, NavMobile, Button } from './styles';
-import { Burger } from "./Burger";
 
-export function Mobile() {
+import LogoMobile from '@/assets/images/logo/logoEplus.png';
+import { HeaderMobile, NavMobile, Button } from './styles';
+import { NavbarBurger } from "@/components/molecules/NavbarBurger";
+import { Sidebar } from "../Sidebar";
+
+
+export function InterfaceMobile() {
   const[open, setOpen] = useState<boolean>(false);
 
   return(
@@ -18,7 +20,7 @@ export function Mobile() {
           />    
         </div>  
         <Button onClick={() => setOpen(!open)}>
-          <Burger isOpen={open} />
+          <NavbarBurger isOpen={open} />
         </Button>
       </NavMobile>
       { open && <Sidebar /> }

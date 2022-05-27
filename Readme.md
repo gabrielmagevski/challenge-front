@@ -8,9 +8,10 @@ $ yarn ( para instalar as dependencias ) <br />
 $ yarn dev ( para executar o projeto )
 
 ## O que foi usado no projeto
-Styled-Components, Typescript, Axios, Vite, Reactjs. 
+Atomic Design Methodology, Styled-Components, Typescript, Axios, Vite, Reactjs. 
 
 ## Por que? 
+Atomic Design Methodology - Para deixar o nosso code mais organizado e para deixar o nosso projeto mais escalavel, para podermos entender corretamente a estrutura de cada item.
 Styled-Components - Facilitando as escritas dos códigos css e quase sem bugs para diferenciar entre estilos e diferentes de escritas. <br />
 Typescript - para deixar mais organizado o nosso código.<br />
 Axios - para consumir nossa API em json.<br />
@@ -29,9 +30,10 @@ $ yarn ( to install dependencies ) <br />
 $ yarn dev  (to run the project )
 
 ## What was used in the project
-Styled-Components, Typescript, Axios, Vite, Reactjs.
+Atomic Design Methodology, Styled-Components, Typescript, Axios, Vite, Reactjs.
 
 ## Why?
+Atomic Design Methodology - To make our code more organized and to make our project more scalable, so we can correctly understand the structure of each item.
 Styled-Components - Making it easy to write css code and almost bug free to differentiate between styles and different writings. <br />
 Typescript - to make our code more organized.<br />
 Axios - to consume our API in json.<br />

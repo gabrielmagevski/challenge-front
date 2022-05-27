@@ -1,11 +1,11 @@
 import React from 'react'
-import { TypeBurger } from '../../../../@types/TypesAll';
+import { TypeBurger } from '@/@types/TypesAll';
 
-import BurgerOpen from '../../../../assets/burger.svg';
-import BurgerClose from  '../../../../assets/closed.svg';
+import BurgerOpen from '@/assets/burger.svg';
+import BurgerClose from  '@/assets/closed.svg';
 import { BurgerStyled } from './styles';
 
-export function Burger({ isOpen }: TypeBurger) {
+export function NavbarBurger({ isOpen }: TypeBurger) {
   return (
     <>
       { 

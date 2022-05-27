@@ -1,8 +1,8 @@
 import React from 'react'
-import { TypeListItems } from '../../../@types/TypesAll'
+import { TypeListItems } from '@/@types/TypesAll'
 import { List } from './styles'
 
-export function ListItems({ children }: TypeListItems) {
+export function NavbarList({ children }: TypeListItems) {
   return (
    <>
       <List>

@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, ButtonHTMLAttributes} from "react";
 
 export type ProductsType = {
   productId: number;
@@ -17,6 +17,10 @@ export type TypeContextProps = {
 
 export type TypeItem = {
   data: ProductsType;
+}
+
+export type TypeCartButton = ButtonHTMLAttributes<HTMLButtonElement> & {
+  children?: ReactNode;
 }
 
 export type TypeListItems = {

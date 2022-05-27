@@ -27,20 +27,3 @@ export const Navbar = styled.nav`
     justify-content: space-between;
   }
 `;
-
-export const Icons = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-`;
-
-export const ButtonInvisible = styled.button`
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-`;
-
-export const Image = styled.img`
-  cursor: pointer;
-`;

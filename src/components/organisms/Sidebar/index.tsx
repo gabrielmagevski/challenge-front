@@ -1,23 +1,24 @@
 import { useContext } from 'react';
-import { OpenCartContext } from '../../../../context/OpenCart';
-import ShoppingCart from '../../../../assets/shoppingCartIcon.svg'
+import { OpenCartContext } from '@/context/OpenCart';
+import ShoppingCart from '@/assets/shoppingCartIcon.svg'
 
 import { Menu } from './styles';
-import { ListItems } from '../../ListItems';
-import { Cart } from '../../../Cart';
+import { NavbarList } from '@/components/molecules/NavbarList';
+import { Cart } from '@/components/templates/Cart';
+
 
 export function Sidebar() {
   const { openCart, setOpenCart } = useContext(OpenCartContext)
   return(
     <Menu>
-      <ListItems>
+      <NavbarList>
         <img 
           onClick={() => setOpenCart!(!openCart)}
           src={ShoppingCart} 
           alt="cart"
         />
         { openCart && <Cart /> }
-      </ListItems>
+      </NavbarList>
     </Menu>
   )
 }

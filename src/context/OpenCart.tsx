@@ -1,5 +1,5 @@
-import { createContext, ReactNode, useState } from "react";
-import { TypeContextProps } from "../@types/TypesAll";
+import { createContext, useState } from "react";
+import { TypeContextProps } from "@/@types/TypesAll";
 
 export const OpenCartContext = createContext({} as TypeContextProps)
 

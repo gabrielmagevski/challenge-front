@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components"; 
-import { TypePropsSummaryInformation } from "../../@types/TypesAll";
+import { TypePropsSummaryInformation } from "@/@types/TypesAll";
 
 export const Items = styled.div`
   display: flex;
@@ -15,6 +15,12 @@ export const GroupProducts = styled.div`
 
   img { 
     width: 100%;
+  }
+
+  @media (max-width: 920px){
+    img {
+      width: 25%;
+    }
   }
 `;
 
