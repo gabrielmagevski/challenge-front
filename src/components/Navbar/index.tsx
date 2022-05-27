@@ -1,47 +1,20 @@
-import React, { useContext } from 'react';
-import CartIconSVG from '../../assets/shoppingCartIcon.svg';
-import PersonIconSVG from '../../assets/personIcon.svg';
-import SearchIconSVG from '../../assets/searchIcon.svg';
-
-import { Cart } from '../Cart';
-import { OpenCartContext } from '../../context/OpenCart';
-import ListItems from './ListItems';
-import { Logo } from './Logo';
-import {
-  ButtonInvisible,
-  Icons,
-  Navbar, 
-  Topbar, 
-  Image 
-} from './styles';
+import React from 'react'
+import { useMediaQuery } from 'react-responsive';
+import { Desktop } from './Desktop';
+import { Mobile } from './Mobile';
 
 export function Header() {
-  const { openCart, setOpenCart } = useContext(OpenCartContext);
-
+  const isMobile = useMediaQuery({query: '(max-width: 820px)'});
+  
   return (
     <>
-      <Topbar>
-        <Navbar>
-          <Logo />
-          <ListItems />
-          <Icons> 
-            <Icons>
-              <Image src={SearchIconSVG} />
-              <Image src={PersonIconSVG} />
-              <ButtonInvisible onClick={() => setOpenCart!(!openCart)}>
-                <Image src={CartIconSVG} />
-              </ButtonInvisible> 
-            </Icons>
-            { openCart && <Cart /> }  
-          </Icons>
-        </Navbar>
-      </Topbar>
+      {
+      isMobile ? (
+        <Mobile />
+      ) : (
+        <Desktop />
+      )
+    }
     </>
   )
 }
-
-
-/*
-  falta: responsivo e o
-  mobile, animação do cart e Reducer para somar as contas.
-*\

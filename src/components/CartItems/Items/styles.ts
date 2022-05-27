@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components"; 
-import { TypePropsSummaryInformation } from "../../@types/TypesAll";
+import { TypePropsSummaryInformation } from "../../../@types/TypesAll";
 
 export const Items = styled.div`
   display: flex;
@@ -12,10 +12,10 @@ export const GroupProducts = styled.div`
   justify-content: center;
   flex-direction: row;
   gap: 10px;
-`;
 
-export const Image = styled.img`
-  width: 100px;
+  img { 
+    width: 100%;
+  }
 `;
 
 export const Title = styled.h3`

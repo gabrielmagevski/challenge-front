@@ -16,6 +16,7 @@ export const Topbar = styled.header`
 `;  
 
 export const Navbar = styled.nav`
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -31,7 +32,7 @@ export const Icons = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 50px;
 `;
 
 export const ButtonInvisible = styled.button`

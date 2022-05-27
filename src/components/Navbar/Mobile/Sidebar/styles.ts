@@ -1,4 +1,6 @@
-.menu {
+import styled from "styled-components";
+
+export const Menu = styled.div`
   display: flex;
   justify-content: left;
   position: absolute;
@@ -14,7 +16,7 @@
   &:active {
     transition: 350ms;
   }
-  
+
   ul {
     list-style: none;
     width: 100%;
@@ -30,4 +32,4 @@
       padding-left: 10px;
     }
   }
-}
+`;

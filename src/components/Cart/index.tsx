@@ -1,20 +1,30 @@
 import React from 'react'
-import { CartButton } from '../CartButton';
 import { CartItems } from '../CartItems';
-import { CartPrices } from '../CartPrices';
-import { SectionCart, CartProducts, CartTriangle } from './styles';
+import { 
+  SectionCart,
+  CartProducts,
+  CartTriangle,
+  CartButton,
+  AreaCart,
+  AreaPrice,
+  TotalPrice
+} from './styles';
 
 export function Cart() {
   return (
-   <>
-      <SectionCart>
-       <CartTriangle />
+    <SectionCart>
+      <CartTriangle />
         <CartProducts>
           <CartItems />
-          <CartPrices />
-          <CartButton title='Finalizar Compra' />
+          <AreaCart>
+            <AreaPrice>
+              <TotalPrice>Total do pedido: <span>R$ 20.356,95</span></TotalPrice> 
+            </AreaPrice>
+            <CartButton>
+              Finalizar Compra
+            </CartButton>
+          </AreaCart>
         </CartProducts>
-      </SectionCart>
-   </>
+    </SectionCart>
   )
 }
