@@ -1,5 +1,5 @@
 import React from 'react'
-import { TypeItem } from '../../../@types/TypesAll';
+import { TypeItem } from '../../@types/TypesAll';
 import { 
   GroupProducts, 
   Items,
@@ -10,7 +10,7 @@ import {
 } from './styles';
 
 
-export function Item({ data }: TypeItem) {
+export function CartItem({ data }: TypeItem) {
   return (
     <>
       <Items>

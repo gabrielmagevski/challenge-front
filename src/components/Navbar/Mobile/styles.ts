@@ -15,9 +15,9 @@ export const NavMobile = styled.nav`
     margin-top: 25px;
     width: 80%;
   }
+`;
 
-  .buguer {
-    margin-top: 35px;
-    cursor: pointer;
-  }
+export const Button = styled.button`
+  border: none;
+  background-color: transparent;
 `;

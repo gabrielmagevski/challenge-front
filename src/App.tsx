@@ -1,12 +1,12 @@
 
-import { Header } from './components/Navbar'
+import { Navbar } from './components/Navbar'
 import { GlobalStyles } from './styles/GlobalStyles'
 
 function App() {
   return (  
     <>
       <GlobalStyles />
-      <Header />
+      <Navbar />
     </>
   )
 }

@@ -6,7 +6,7 @@ import EPlusLogo from '../../../assets/images/logo/logoEplus.png';
 
 import { Cart } from '../../Cart';
 import { OpenCartContext } from '../../../context/OpenCart';
-import ListItems from '../ListItems';
+import { ListItems } from '../ListItems';
 
 import {
   ButtonInvisible,
@@ -23,7 +23,11 @@ export function Desktop() {
     <>
       <Topbar>
         <Navbar>
-          <img className="logoStyle" src={EPlusLogo} alt="logo Eplus" />
+          <img 
+            className="logoStyle"
+            src={EPlusLogo}
+            alt="logo Eplus"
+          />
           <ListItems />
           <div> 
             <Icons>

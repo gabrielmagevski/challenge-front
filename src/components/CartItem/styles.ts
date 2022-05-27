@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components"; 
-import { TypePropsSummaryInformation } from "../../../@types/TypesAll";
+import { TypePropsSummaryInformation } from "../../@types/TypesAll";
 
 export const Items = styled.div`
   display: flex;

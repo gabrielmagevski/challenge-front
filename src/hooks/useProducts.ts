@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import api from "../services/api";
 import '../../products.json';
-import { PropsProducts } from "../@types/TypesAll";
+import { ProductsType } from "../@types/TypesAll";
 
 export function useProducts() {
-  const[ products, setProducts ] = useState<PropsProducts[]>([]);
+  const[ products, setProducts ] = useState<ProductsType[]>([]);
 
   useEffect(() => { 
     try {
@@ -16,6 +16,13 @@ export function useProducts() {
       console.log(err);
     }
   }, []);
- 
-  return products;
+
+  const reducer = useCallback(() => {
+     return products.reduce((acc, product) => {
+        return acc += product.bestPrice;
+    }, 0)
+  }, [products]);
+
+  return { products, reducer };
 }
+

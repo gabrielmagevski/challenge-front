@@ -1,5 +1,6 @@
 import React from 'react'
-import { CartItems } from '../CartItems';
+import { useProducts } from '../../hooks/useProducts';
+import { CartItem } from '../CartItem';
 import { 
   SectionCart,
   CartProducts,
@@ -11,14 +12,24 @@ import {
 } from './styles';
 
 export function Cart() {
+  const { products, reducer } = useProducts();
   return (
     <SectionCart>
       <CartTriangle />
         <CartProducts>
-          <CartItems />
+         { products.map(product => <CartItem key={product.productId} data={product} /> )}
           <AreaCart>
             <AreaPrice>
-              <TotalPrice>Total do pedido: <span>R$ 20.356,95</span></TotalPrice> 
+              <TotalPrice>
+                Total do pedido: 
+                <span>
+                  {
+                    new Intl
+                    .NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'})
+                    .format(reducer() / 100)
+                  }
+                </span>
+              </TotalPrice> 
             </AreaPrice>
             <CartButton>
               Finalizar Compra

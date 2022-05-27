@@ -1,15 +1,22 @@
 import { ReactNode } from "react";
 
-export type PropsProducts = {
+export type ProductsType = {
   productId: number;
   name: string;
   quantity: number;
   bestPriceFormated: string;
+  bestPrice: number;
   image: string;
 }
 
+export type TypeContextProps = {
+  children?: ReactNode;
+  openCart?: boolean,
+  setOpenCart?: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
 export type TypeItem = {
-  data: PropsProducts;
+  data: ProductsType;
 }
 
 export type TypeListItems = {
@@ -26,4 +33,8 @@ export type TotalPriceProps = {
 
 export type itemsPropsCart = {
   isVisible?: boolean;
+}
+
+export type TypeBurger = {
+  isOpen: boolean;
 }

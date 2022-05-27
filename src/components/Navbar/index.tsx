@@ -3,18 +3,12 @@ import { useMediaQuery } from 'react-responsive';
 import { Desktop } from './Desktop';
 import { Mobile } from './Mobile';
 
-export function Header() {
+export function Navbar() {
   const isMobile = useMediaQuery({query: '(max-width: 820px)'});
   
-  return (
-    <>
-      {
-      isMobile ? (
-        <Mobile />
-      ) : (
-        <Desktop />
-      )
-    }
-    </>
-  )
+  if(isMobile) {
+    return <Mobile />
+  }
+  
+  return <Desktop />
 }
